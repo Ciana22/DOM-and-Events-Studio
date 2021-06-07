@@ -11,6 +11,11 @@ window.addEventListener("load",function() {
     let shuttleBackground = document. getElementById("shuttleBackground");
     let spaceShuttleHeight = document.getElementById("spaceShuttleHeight");
     let abortButton = document.getElementById("missionAbort");
+    let upButton = document.getElementById("up");
+    let downButton = document.getElementById("down");
+    let rightButton = document.getElementById("right");
+    let leftButton = document.getElementById("left");
+
 
     takeOffButton.addEventListener("click", function() {
       let takeOffConfirmation = window.confirm("Confirm that the shuttle is ready for takeoff.");
@@ -42,7 +47,23 @@ window.addEventListener("load",function() {
         }
          
       })
+        upButton.addEventListener("click", function() {
+        let spaceShuttleHeightNumber = Number(spaceShuttleHeight.innerHTML);
+            spaceShuttleHeight.innerHTML = spaceShuttleHeightNumber + 10000;
+      })
+        downButton.addEventListener("click", function() {
+        let spaceShuttleHeightNumber = Number(spaceShuttleHeightNumber.innerHTML);
+            spaceShuttleHeight.innerHTML = spaceShuttleHeightNumber - 10000;
+      })
+        leftButton.addEventListener("click", function() {
+            spaceShuttleHeightNumber = Number(spaceShuttleHeightNumber)
+            spaceShuttleHeight.innerHTML =
+       })
 
+       rightButton.addEventListener("click", function() {
+            spaceShuttleHeightNumber = Number(spaceShuttleHeightNumber)
+            spaceShuttleHeight.innerHTML =
+       
     })
 
     
